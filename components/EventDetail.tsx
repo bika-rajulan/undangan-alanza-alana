@@ -25,12 +25,12 @@ export default function EventDetail() {
             {
               icon: CalendarDays,
               title: "Tanggal",
-              text: "Sabtu, 10 Oktober 2026",
+              text: "Minggu, 11 Oktober 2026",
             },
             {
               icon: Clock,
               title: "Waktu",
-              text: "10.00 WIB – selesai",
+              text: "08.00 WIB – selesai",
             },
             {
               icon: MapPin,
@@ -73,12 +73,12 @@ export default function EventDetail() {
           </h3>
 
           <p className="mx-auto mt-3 max-w-lg text-sm leading-6 text-white/60">
-            Jl. Contoh Alamat No. 123, Kota Anda,
-            Indonesia
+            Lrg. Kamboja RT.07/01, Desa Mendalo Darat, Jambi Luar Kota,
+            Jambi 36361
           </p>
 
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/nNGJCvWSxJ53KPPj8"
             target="_blank"
             rel="noreferrer"
             className="mt-6 inline-block rounded-full bg-[#d4bc8b] px-7 py-3 text-sm font-medium text-[#26332b] transition hover:bg-white"
