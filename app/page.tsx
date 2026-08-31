@@ -48,7 +48,7 @@ export default function Home() {
             </p>
 
             <p className="font-display text-5xl font-semibold text-[#657567] sm:text-6xl">
-              Saquena Alana Rajulan
+              Shaquena Alana Rajulan
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
             Putra & Putri tercinta dari keluarga
             <br />
             <span className="font-medium text-gray-500">
-              Bapak Bika Rajulan S.Kom & Ibu Sri Wahyuni S.pd
+              Bapak Bika Rajulan S.Kom & Ibu Sri Wahyuni S.Pd
             </span>
           </p>
 
