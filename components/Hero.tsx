@@ -63,7 +63,7 @@ export default function Hero() {
         <p className="mb-6 text-xs uppercase tracking-[0.35em] text-white/60 sm:text-sm">
           Tasyakuran Khitanan
           <span className="mx-2 text-[#d4bc8b]">&</span>
-          Cukuran
+          Aqiqah
         </p>
 
         {/* Nama */}

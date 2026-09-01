@@ -25,7 +25,7 @@ Assalamu'alaikum Warahmatullahi Wabarakatuh
 
 Saya ingin mengonfirmasi kehadiran untuk acara:
 
-*Tasyakuran Khitanan Alanza & Cukuran Alana*
+*Tasyakuran Khitanan Alanza & Aqiqah Alana*
 
 Nama: ${name}
 Kehadiran: ${attendance}
