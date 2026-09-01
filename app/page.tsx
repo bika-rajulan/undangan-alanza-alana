@@ -70,101 +70,141 @@ export default function Home() {
       </audio>
 
       {/* =========================================
-          COVER / BUKA UNDANGAN
-      ========================================== */}
-      {!isOpened && (
-        <div className="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-hidden bg-[#26332b]">
+    COVER / BUKA UNDANGAN
+========================================== */}
+{!isOpened && (
+  <div className="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-hidden bg-[#26332b]">
 
-          {/* FOTO COVER */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/images/alanza-alana.jpg')",
-            }}
-          />
+    {/* =====================================
+        FOTO COVER
+        Foto dibuat dominan dan jelas
+    ====================================== */}
+    <div
+      className="absolute inset-0 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/alanza-alana.jpg')",
+      }}
+    />
 
-          {/* Overlay gelap sangat tipis */}
-          <div className="absolute inset-0 bg-[#26332b]/15" />
+    {/* =====================================
+        OVERLAY SANGAT TIPIS
+        Hanya sedikit membantu kontras
+    ====================================== */}
+    <div className="absolute inset-0 bg-black/10" />
 
-          {/* Gradient untuk menjaga teks tetap terbaca */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#26332b]/25 via-transparent to-[#26332b]/45" />
+    {/* =====================================
+        GRADIENT TEKS
+        Tidak membentuk panel
+    ====================================== */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/15" />
 
-          {/* Soft shadow bagian tengah */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(38,51,43,0.25)_100%)]" />
 
-          {/* FRAME */}
-          <div className="absolute inset-4 rounded-[2rem] border border-[#f4dfb2]/45 sm:inset-7" />
+    {/* =====================================
+        FRAME LUAR
+    ====================================== */}
+    <div className="pointer-events-none absolute inset-4 rounded-[2rem] border border-[#f4dfb2]/55 sm:inset-7" />
 
-          <div className="absolute inset-7 rounded-[1.5rem] border border-[#d4bc8b]/45 sm:inset-10" />
+    <div className="pointer-events-none absolute inset-7 rounded-[1.5rem] border border-[#d4bc8b]/40 sm:inset-10" />
 
-          {/* LINGKARAN */}
-          <div className="absolute left-1/2 top-1/2 h-[680px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#f4dfb2]/20" />
 
-          <div className="absolute left-1/2 top-1/2 h-[560px] w-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#d4bc8b]/20" />
+    {/* =====================================
+        ORNAMEN LINGKARAN
+    ====================================== */}
+    <div className="pointer-events-none absolute left-1/2 top-1/2 h-[680px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#f4dfb2]/15" />
 
-          <div className="absolute left-1/2 top-1/2 h-[440px] w-[440px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#f4dfb2]/15" />
+    <div className="pointer-events-none absolute left-1/2 top-1/2 h-[560px] w-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#d4bc8b]/15" />
 
-          {/* ORNAMEN SUDUT */}
-          <div className="absolute left-7 top-7 h-20 w-20 border-l border-t border-[#d4bc8b]/70" />
-          <div className="absolute right-7 top-7 h-20 w-20 border-r border-t border-[#d4bc8b]/70" />
-          <div className="absolute bottom-7 left-7 h-20 w-20 border-b border-l border-[#d4bc8b]/70" />
-          <div className="absolute bottom-7 right-7 h-20 w-20 border-b border-r border-[#d4bc8b]/70" />
 
-          {/* =====================================
-              PANEL TEKS
-              Transparan, tidak putih
-          ====================================== */}
-          <div className="relative z-10 mx-6 max-w-md rounded-[2rem] border border-[#d4bc8b]/45 bg-[#26332b]/30 px-8 py-10 text-center shadow-[0_20px_70px_rgba(20,28,23,0.35)] backdrop-blur-[2px] sm:px-12 sm:py-12">
+    {/* =====================================
+        ORNAMEN SUDUT
+    ====================================== */}
+    <div className="pointer-events-none absolute left-7 top-7 h-20 w-20 border-l border-t border-[#d4bc8b]/65" />
 
-            <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-[#f4dfb2] drop-shadow-md sm:text-[11px]">
-              Bismillahirrahmanirrahim
-            </p>
+    <div className="pointer-events-none absolute right-7 top-7 h-20 w-20 border-r border-t border-[#d4bc8b]/65" />
 
-            <div className="mx-auto mt-6 h-px w-16 bg-[#d4bc8b]" />
+    <div className="pointer-events-none absolute bottom-7 left-7 h-20 w-20 border-b border-l border-[#d4bc8b]/65" />
 
-            <p className="mt-7 text-xs font-medium uppercase tracking-[0.18em] text-[#f4dfb2] drop-shadow-md sm:text-sm">
-              Tasyakuran Khitanan & Aqiqah
-            </p>
+    <div className="pointer-events-none absolute bottom-7 right-7 h-20 w-20 border-b border-r border-[#d4bc8b]/65" />
 
-            <h1 className="font-display mt-6 text-5xl leading-[1.02] text-[#fff4d6] drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] sm:text-6xl">
-              Alanza
-              <br />
 
-              <span className="text-3xl font-light text-[#d4bc8b]">
-                &
-              </span>
+    {/* =====================================
+        KONTEN LANGSUNG DI ATAS FOTO
+        TANPA PANEL
+    ====================================== */}
+    <div className="relative z-10 mx-6 w-full max-w-md px-4 py-10 text-center">
 
-              <br />
+      {/* Bismillah */}
+      <p className="text-[10px] font-semibold uppercase tracking-[0.45em] text-[#fff4d6] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-[11px]">
+        Bismillahirrahmanirrahim
+      </p>
 
-              Alana
-            </h1>
 
-            <div className="mx-auto mt-7 h-px w-12 bg-[#d4bc8b]" />
+      {/* Divider */}
+      <div className="mx-auto mt-6 h-px w-16 bg-[#f4dfb2] shadow-[0_1px_6px_rgba(0,0,0,0.8)]" />
 
-            <p className="mt-7 text-sm leading-7 text-[#f5ead2] drop-shadow-md">
-              Kepada Yth.
-              <br />
 
-              <span className="font-medium text-[#fff8e9]">
-                Bapak/Ibu/Saudara/i
-              </span>
-            </p>
+      {/* Jenis acara */}
+      <p className="mt-7 text-xs font-semibold uppercase tracking-[0.18em] text-[#fff8e9] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-sm">
+        Tasyakuran Khitanan
+        <span className="mx-2 text-[#f4dfb2]">
+          &
+        </span>
+        Aqiqah
+      </p>
 
-            <button
-              onClick={openInvitation}
-              className="mt-9 rounded-full border border-[#d4bc8b] bg-[#d4bc8b] px-10 py-3.5 text-sm font-medium tracking-wide text-[#26332b] shadow-[0_8px_25px_rgba(20,25,20,0.35)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2]"
-            >
-              ✉ Buka Undangan
-            </button>
 
-            <p className="mt-5 text-[9px] uppercase tracking-[0.28em] text-[#f4ead4]/75">
-              Ketuk untuk membuka undangan
-            </p>
+      {/* Nama */}
+      <h1 className="font-display mt-6 text-6xl leading-[0.95] text-[#fff8e9] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)] sm:text-8xl">
 
-          </div>
+        <span className="block">
+          Alanza
+        </span>
 
-        </div>
-      )}
+        <span className="my-4 block text-3xl font-light text-[#f4dfb2] drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)] sm:my-5 sm:text-4xl">
+          &
+        </span>
+
+        <span className="block">
+          Alana
+        </span>
+
+      </h1>
+
+
+      {/* Divider */}
+      <div className="mx-auto mt-8 h-px w-14 bg-[#f4dfb2] shadow-[0_1px_7px_rgba(0,0,0,0.8)]" />
+
+
+      {/* Tamu */}
+      <p className="mt-7 text-sm font-medium leading-7 text-[#fff8e9] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+        Kepada Yth.
+        <br />
+
+        <span className="font-semibold text-white">
+          Bapak/Ibu/Saudara/i
+        </span>
+      </p>
+
+
+      {/* Tombol */}
+      <button
+        onClick={openInvitation}
+        className="mt-9 rounded-full border border-[#f4dfb2] bg-[#d4bc8b]/95 px-10 py-3.5 text-sm font-semibold tracking-wide text-[#26332b] shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] active:scale-95"
+      >
+        ✉ Buka Undangan
+      </button>
+
+
+      {/* Petunjuk */}
+      <p className="mt-5 text-[9px] font-medium uppercase tracking-[0.28em] text-white/85 drop-shadow-[0_2px_7px_rgba(0,0,0,0.9)]">
+        Ketuk untuk membuka undangan
+      </p>
+
+    </div>
+
+  </div>
+)}
+
 
       {/* =========================================
           TOMBOL MUSIK
