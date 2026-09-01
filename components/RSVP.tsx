@@ -216,27 +216,25 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh
 
 
           {/* =====================================
-              TOMBOL WHATSAPP
-          ====================================== */}
-          <motion.button
-            type="submit"
-            whileHover={{
-              scale: 1.02,
-            }}
-            whileTap={{
-              scale: 0.98,
-            }}
-            className="mt-7 flex w-full items-center justify-center gap-2 rounded-full border border-[#435046] bg-[#435046] px-6 py-4 text-sm font-medium text-white shadow-[0_8px_25px_rgba(67,80,70,0.18)] transition duration-300 hover:bg-[#536256]"
-          >
+    TOMBOL WHATSAPP
+====================================== */}
+<motion.button
+  type="submit"
+  whileHover={{
+    scale: 1.02,
+  }}
+  whileTap={{
+    scale: 0.98,
+  }}
+  className="mt-7 flex w-full items-center justify-center gap-2 rounded-full border border-[#c8a968]/60 bg-[#36443b] px-6 py-4 text-sm font-medium text-[#f4dfb2] shadow-[0_10px_30px_rgba(54,68,59,0.16)] transition duration-300 hover:border-[#d4bc8b] hover:bg-[#d4bc8b] hover:text-[#36443b] hover:shadow-[0_12px_35px_rgba(200,169,104,0.18)]"
+>
+  <MessageCircle
+    size={18}
+    strokeWidth={1.8}
+  />
 
-            <MessageCircle
-              size={18}
-              strokeWidth={1.8}
-            />
-
-            Kirim Konfirmasi via WhatsApp
-
-          </motion.button>
+  Kirim Konfirmasi via WhatsApp
+</motion.button>
 
 
           {/* =====================================

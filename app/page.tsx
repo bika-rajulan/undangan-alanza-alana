@@ -136,71 +136,70 @@ export default function Home() {
 
 
           {/* =====================================
-              PANEL TEKS
-              Transparan agar foto tetap terlihat
-          ====================================== */}
-          <div className="relative z-10 mx-6 max-w-md rounded-[2rem] border border-white/60 bg-[#fffdf8]/70 px-8 py-10 text-center shadow-[0_20px_70px_rgba(55,45,30,0.18)] backdrop-blur-[3px] sm:px-12 sm:py-12">
+    PANEL TEKS
+    Transparan — tanpa warna putih
+====================================== */}
+<div className="relative z-10 mx-6 max-w-md rounded-[2rem] border border-[#d4bc8b]/45 bg-[#26332b]/25 px-8 py-10 text-center shadow-[0_20px_70px_rgba(30,35,28,0.20)] backdrop-blur-[2px] sm:px-12 sm:py-12">
 
-            {/* Bismillah */}
-            <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-[#57574f] sm:text-[11px]">
-              Bismillahirrahmanirrahim
-            </p>
+  {/* Bismillah */}
+  <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-[#f4dfb2] drop-shadow-sm sm:text-[11px]">
+    Bismillahirrahmanirrahim
+  </p>
 
-            <div className="mx-auto mt-6 h-px w-16 bg-[#b99a62]" />
-
-
-            {/* Jenis acara */}
-            <p className="mt-7 text-xs font-medium uppercase tracking-[0.18em] text-[#625f56] sm:text-sm">
-              Tasyakuran Khitanan & Aqiqah
-            </p>
+  <div className="mx-auto mt-6 h-px w-16 bg-[#d4bc8b]" />
 
 
-            {/* Nama */}
-            <h1 className="font-display mt-6 text-5xl leading-[1.02] text-[#35443a] drop-shadow-sm sm:text-6xl">
-              Alanza
-              <br />
-
-              <span className="text-3xl font-light text-[#ad8848]">
-                &
-              </span>
-
-              <br />
-
-              Alana
-            </h1>
+  {/* Jenis acara */}
+  <p className="mt-7 text-xs font-medium uppercase tracking-[0.18em] text-[#f1e6cc] drop-shadow-sm sm:text-sm">
+    Tasyakuran Khitanan & Aqiqah
+  </p>
 
 
-            <div className="mx-auto mt-7 h-px w-12 bg-[#b99a62]" />
+  {/* Nama */}
+  <h1 className="font-display mt-6 text-5xl leading-[1.02] text-[#fff4d6] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] sm:text-6xl">
+    Alanza
+    <br />
+
+    <span className="text-3xl font-light text-[#d4bc8b]">
+      &
+    </span>
+
+    <br />
+
+    Alana
+  </h1>
 
 
-            {/* Tamu */}
-            <p className="mt-7 text-sm leading-7 text-[#595951]">
-              Kepada Yth.
-              <br />
-
-              <span className="font-medium text-[#45483f]">
-                Bapak/Ibu/Saudara/i
-              </span>
-            </p>
+  {/* Divider */}
+  <div className="mx-auto mt-7 h-px w-12 bg-[#d4bc8b]" />
 
 
-            {/* Tombol buka */}
-            <button
-              onClick={openInvitation}
-              className="mt-9 rounded-full border border-[#b99a62] bg-[#b99a62] px-10 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_8px_25px_rgba(100,80,45,0.25)] transition duration-300 hover:scale-105 hover:bg-[#a9874b]"
-            >
-              ✉ Buka Undangan
-            </button>
+  {/* Tamu */}
+  <p className="mt-7 text-sm leading-7 text-[#f5ead2] drop-shadow-sm">
+    Kepada Yth.
+    <br />
+
+    <span className="font-medium text-white">
+      Bapak/Ibu/Saudara/i
+    </span>
+  </p>
 
 
-            <p className="mt-5 text-[9px] uppercase tracking-[0.28em] text-[#716c61]">
-              Ketuk untuk membuka undangan
-            </p>
+  {/* Tombol buka */}
+  <button
+    onClick={openInvitation}
+    className="mt-9 rounded-full border border-[#d4bc8b] bg-[#d4bc8b]/90 px-10 py-3.5 text-sm font-medium tracking-wide text-[#26332b] shadow-[0_8px_25px_rgba(40,35,25,0.25)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] hover:shadow-[0_10px_30px_rgba(40,35,25,0.3)]"
+  >
+    ✉ Buka Undangan
+  </button>
 
-          </div>
 
-        </div>
-      )}
+  {/* Petunjuk */}
+  <p className="mt-5 text-[9px] uppercase tracking-[0.28em] text-[#eadfca]/75">
+    Ketuk untuk membuka undangan
+  </p>
+
+</div>
 
 
       {/* =========================================
@@ -598,34 +597,67 @@ export default function Home() {
 
 
       {/* =========================================
-          FOOTER
-      ========================================== */}
-      <footer className="bg-[#435046] px-6 py-16 text-center text-white">
+    FOOTER
+========================================= */}
+<footer className="relative overflow-hidden bg-[#36443b] px-6 py-20 text-center text-white">
 
-        <p className="text-xs uppercase tracking-[0.3em] text-[#e2cc98]">
-          Tasyakuran Khitanan & Aqiqah
-        </p>
+  {/* Ornamen dekoratif */}
+  <div className="absolute -left-24 -top-24 h-64 w-64 rounded-full border border-[#d4bc8b]/10" />
 
+  <div className="absolute -right-24 -bottom-24 h-72 w-72 rounded-full border border-[#d4bc8b]/10" />
 
-        <h2 className="font-display mt-4 text-4xl text-[#f4dfb2]">
-          Alanza & Alana
-        </h2>
+  <div className="absolute left-1/2 top-0 h-px w-24 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#d4bc8b] to-transparent" />
 
 
-        <p className="mx-auto mt-5 max-w-md text-xs leading-7 text-white/60">
-          Terima kasih atas doa, perhatian, dan kehadiran
-          Bapak/Ibu/Saudara/i.
-        </p>
+  {/* Content */}
+  <div className="relative z-10 mx-auto max-w-xl">
+
+    {/* Label */}
+    <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-[#d8bd82] sm:text-xs">
+      Tasyakuran Khitanan & Aqiqah
+    </p>
 
 
-        <div className="mx-auto mt-8 h-px w-10 bg-[#d4bc8b]/70" />
+    {/* Nama */}
+    <h2 className="font-display mt-5 text-4xl text-[#f3dfb1] sm:text-5xl">
+      Alanza & Alana
+    </h2>
 
 
-        <p className="mt-6 text-[10px] tracking-[0.25em] text-white/40">
-          WITH LOVE FROM OUR FAMILY
-        </p>
+    {/* Divider */}
+    <div className="mx-auto mt-6 flex items-center justify-center gap-3">
+      <div className="h-px w-8 bg-[#d4bc8b]/40" />
 
-      </footer>
+      <div className="h-1 w-1 rotate-45 bg-[#d4bc8b]" />
+
+      <div className="h-px w-8 bg-[#d4bc8b]/40" />
+    </div>
+
+
+    {/* Pesan */}
+    <p className="mx-auto mt-7 max-w-md text-xs leading-7 text-white/60 sm:text-sm">
+      Terima kasih atas doa, perhatian, kasih sayang,
+      dan kehadiran Bapak/Ibu/Saudara/i yang turut
+      menjadi bagian dari kebahagiaan keluarga kami.
+    </p>
+
+
+    {/* Ornamen kecil */}
+    <div className="mx-auto mt-9 flex items-center justify-center">
+      <span className="h-px w-12 bg-[#d4bc8b]/30" />
+      <span className="mx-3 text-sm text-[#d4bc8b]">✦</span>
+      <span className="h-px w-12 bg-[#d4bc8b]/30" />
+    </div>
+
+
+    {/* Signature */}
+    <p className="mt-7 text-[9px] uppercase tracking-[0.35em] text-white/35">
+      With Love From Our Family
+    </p>
+
+  </div>
+
+</footer>
 
     </main>
   );

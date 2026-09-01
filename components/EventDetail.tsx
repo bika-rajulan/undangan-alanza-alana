@@ -140,53 +140,123 @@ export default function EventDetail() {
           <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
 
 
-          {/* Content */}
-          <div className="relative z-10">
+         {/* =========================================
+    LOKASI ACARA
+========================================= */}
+<motion.div
+  initial={{
+    opacity: 0,
+    y: 25,
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: true,
+  }}
+  transition={{
+    duration: 0.7,
+    delay: 0.2,
+  }}
+  className="relative mt-8 overflow-hidden rounded-[2rem] border border-[#d4bc8b]/35 bg-[#435046] p-8 text-center text-white shadow-[0_18px_55px_rgba(67,80,70,0.16)] sm:p-10"
+>
 
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-[#d4bc8b]/40 bg-[#d4bc8b]/10">
-              <MapPin
-                className="text-[#e2cc98]"
-                size={26}
-                strokeWidth={1.6}
-              />
-            </div>
+  {/* =====================================
+      ORNAMEN LINGKARAN
+  ====================================== */}
+
+  <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full border border-[#d4bc8b]/10" />
+
+  <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full border border-[#d4bc8b]/10" />
+
+  <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full border border-[#d4bc8b]/10" />
+
+  <div className="absolute -bottom-12 -left-8 h-40 w-40 rounded-full border border-[#d4bc8b]/10" />
+
+  <div className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
 
 
-            <p className="mt-6 text-[10px] font-medium uppercase tracking-[0.35em] text-[#d4bc8b]">
-              Tempat Acara
-            </p>
+  {/* =====================================
+      GARIS DEKORASI ATAS
+  ====================================== */}
+
+  <div className="absolute left-1/2 top-0 h-1 w-20 -translate-x-1/2 rounded-b-full bg-[#d4bc8b]" />
 
 
-            <h3 className="font-display mt-3 text-3xl text-[#f4dfb2] sm:text-4xl">
-              Kediaman Keluarga
-            </h3>
+  {/* =====================================
+      CONTENT
+  ====================================== */}
+
+  <div className="relative z-10">
+
+    {/* Icon */}
+    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#d4bc8b]/45 bg-[#d4bc8b]/10 shadow-[0_5px_25px_rgba(0,0,0,0.08)]">
+      <MapPin
+        className="text-[#e5ce99]"
+        size={27}
+        strokeWidth={1.5}
+      />
+    </div>
 
 
-            <div className="mx-auto mt-5 h-px w-12 bg-[#d4bc8b]/70" />
+    {/* Label */}
+    <p className="mt-6 text-[10px] font-medium uppercase tracking-[0.4em] text-[#d8bd82]">
+      Tempat Acara
+    </p>
 
 
-            <p className="mx-auto mt-5 max-w-lg text-sm leading-7 text-white/65">
-              Lrg. Kamboja RT.07/01, Desa Mendalo Darat,
-              Jambi Luar Kota, Jambi 36361
-            </p>
+    {/* Judul */}
+    <h3 className="font-display mt-3 text-3xl text-[#f4dfb2] sm:text-4xl">
+      Kediaman Keluarga
+    </h3>
 
 
-            {/* Google Maps */}
-            <a
-              href="https://maps.app.goo.gl/nNGJCvWSxJ53KPPj8"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-7 inline-flex items-center gap-2 rounded-full border border-[#d4bc8b] bg-[#d4bc8b] px-7 py-3 text-sm font-medium text-[#435046] shadow-lg transition duration-300 hover:scale-105 hover:bg-[#f4dfb2]"
-            >
-              <MapPin size={16} />
+    {/* Divider */}
+    <div className="mx-auto mt-5 flex items-center justify-center gap-3">
+      <div className="h-px w-8 bg-[#d4bc8b]/50" />
 
-              Buka Google Maps
-            </a>
+      <div className="h-1 w-1 rotate-45 bg-[#d4bc8b]" />
 
-          </div>
+      <div className="h-px w-8 bg-[#d4bc8b]/50" />
+    </div>
 
-        </motion.div>
 
+    {/* Alamat */}
+    <p className="mx-auto mt-6 max-w-lg text-sm leading-7 text-white/75 sm:text-base">
+      Lrg. Kamboja RT.07/01,
+      <br />
+      Desa Mendalo Darat,
+      <br />
+      Jambi Luar Kota, Jambi 36361
+    </p>
+
+
+    {/* Google Maps */}
+    <a
+      href="https://maps.app.goo.gl/nNGJCvWSxJ53KPPj8"
+      target="_blank"
+      rel="noreferrer"
+      className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#d4bc8b] bg-[#d4bc8b] px-8 py-3.5 text-sm font-medium text-[#435046] shadow-[0_8px_25px_rgba(0,0,0,0.12)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] hover:shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
+    >
+      <MapPin
+        size={16}
+        strokeWidth={1.8}
+      />
+
+      Buka Google Maps
+    </a>
+
+
+    {/* Keterangan */}
+    <p className="mx-auto mt-6 max-w-md text-[11px] leading-6 text-white/40">
+      Kami menantikan kehadiran dan doa terbaik
+      Bapak/Ibu/Saudara/i untuk Alanza & Alana.
+    </p>
+
+  </div>
+
+</motion.div>
 
         {/* =========================================
             CATATAN
