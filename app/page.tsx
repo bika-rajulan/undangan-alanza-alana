@@ -67,7 +67,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#faf8f3] text-[#26332b]">
+    <main className="min-h-screen bg-[#faf8f3] text-[#435046]">
 
       {/* =========================================
           AUDIO
@@ -85,7 +85,7 @@ export default function Home() {
           COVER / BUKA UNDANGAN
       ========================================== */}
       {!isOpened && (
-        <div className="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-hidden bg-[#eee9df]">
+        <div className="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-hidden bg-[#f5f1e8]">
 
           {/* Background Foto */}
           <div
@@ -95,22 +95,30 @@ export default function Home() {
             }}
           />
 
-          {/* Overlay putih / cream */}
-          <div className="absolute inset-0 bg-[#f7f3ea]/72" />
+          {/* Overlay ivory transparan */}
+          <div className="absolute inset-0 bg-[#f8f5ee]/45" />
 
           {/* Gradient lembut */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#fffdf8]/75 via-[#f5f0e6]/60 to-[#e9e0d0]/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#fffdf8]/35 via-[#f7f2e8]/45 to-[#eee6d8]/65" />
 
-          {/* Vignette lembut */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_25%,rgba(86,70,42,0.16)_100%)]" />
+          {/* Soft vignette */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.12)_0%,rgba(238,230,216,0.28)_65%,rgba(70,62,48,0.18)_100%)]" />
+
+
+          {/* =====================================
+              FRAME
+          ====================================== */}
+          <div className="absolute inset-5 rounded-[2rem] border border-white/60 sm:inset-8" />
+
+          <div className="absolute inset-8 rounded-[1.5rem] border border-[#b99a62]/35 sm:inset-12" />
 
 
           {/* =====================================
               ORNAMEN LINGKARAN
           ====================================== */}
-          <div className="absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/30" />
+          <div className="absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/45" />
 
-          <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/20" />
+          <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/25" />
 
           <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/15" />
 
@@ -118,31 +126,31 @@ export default function Home() {
           {/* =====================================
               ORNAMEN SUDUT
           ====================================== */}
-          <div className="absolute left-6 top-6 h-20 w-20 border-l border-t border-[#b99a62]/50" />
+          <div className="absolute left-7 top-7 h-20 w-20 border-l border-t border-[#a88a56]/50" />
 
-          <div className="absolute right-6 top-6 h-20 w-20 border-r border-t border-[#b99a62]/50" />
+          <div className="absolute right-7 top-7 h-20 w-20 border-r border-t border-[#a88a56]/50" />
 
-          <div className="absolute bottom-6 left-6 h-20 w-20 border-b border-l border-[#b99a62]/50" />
+          <div className="absolute bottom-7 left-7 h-20 w-20 border-b border-l border-[#a88a56]/50" />
 
-          <div className="absolute bottom-6 right-6 h-20 w-20 border-b border-r border-[#b99a62]/50" />
+          <div className="absolute bottom-7 right-7 h-20 w-20 border-b border-r border-[#a88a56]/50" />
 
 
           {/* =====================================
               ISI COVER
           ====================================== */}
-          <div className="relative z-10 max-w-md px-6 text-center">
+          <div className="relative z-10 mx-auto max-w-md px-8 text-center">
 
-            <p className="text-[11px] font-medium uppercase tracking-[0.45em] text-[#80683d]">
+            <p className="text-[10px] font-medium uppercase tracking-[0.5em] text-[#66583f] sm:text-[11px]">
               Bismillahirrahmanirrahim
             </p>
 
-            <div className="mx-auto mt-8 h-px w-16 bg-[#b99a62]" />
+            <div className="mx-auto mt-7 h-px w-16 bg-[#b99a62]" />
 
-            <p className="mt-8 text-sm font-medium tracking-[0.15em] text-[#6f624d]">
+            <p className="mt-7 text-xs font-medium uppercase tracking-[0.2em] text-[#665f53] sm:text-sm">
               Tasyakuran Khitanan & Aqiqah
             </p>
 
-            <h1 className="font-display mt-6 text-5xl leading-tight text-[#4c5a4e] drop-shadow-sm sm:text-6xl">
+            <h1 className="font-display mt-6 text-5xl leading-[1.05] text-[#435046] drop-shadow-[0_2px_8px_rgba(255,255,255,0.65)] sm:text-6xl">
               Alanza
               <br />
 
@@ -157,7 +165,7 @@ export default function Home() {
 
             <div className="mx-auto mt-7 h-px w-12 bg-[#b99a62]" />
 
-            <p className="mt-7 text-sm leading-7 text-[#716a60]">
+            <p className="mt-7 text-sm leading-7 text-[#625e56] drop-shadow-[0_1px_4px_rgba(255,255,255,0.7)]">
               Kepada Yth.
               <br />
               Bapak/Ibu/Saudara/i
@@ -165,12 +173,12 @@ export default function Home() {
 
             <button
               onClick={openInvitation}
-              className="mt-10 rounded-full border border-[#c8a968] bg-[#c8a968] px-10 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_10px_35px_rgba(120,95,50,0.25)] transition duration-300 hover:scale-105 hover:bg-[#b9985c]"
+              className="mt-9 rounded-full border border-[#b99a62] bg-[#b99a62]/95 px-10 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_10px_30px_rgba(100,80,45,0.22)] backdrop-blur-sm transition duration-300 hover:scale-105 hover:bg-[#a98a54]"
             >
               ✉ Buka Undangan
             </button>
 
-            <p className="mt-5 text-[10px] uppercase tracking-[0.25em] text-[#817766]">
+            <p className="mt-5 text-[9px] uppercase tracking-[0.3em] text-[#756d60]">
               Ketuk untuk membuka undangan
             </p>
 
@@ -185,11 +193,7 @@ export default function Home() {
       {isOpened && (
         <button
           onClick={toggleMusic}
-          aria-label={
-            isPlaying
-              ? "Matikan musik"
-              : "Putar musik"
-          }
+          aria-label={isPlaying ? "Matikan musik" : "Putar musik"}
           className={`fixed right-5 top-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99a62]/40 bg-white text-lg text-[#8b7042] shadow-lg transition ${
             isPlaying ? "animate-spin" : ""
           }`}
@@ -234,7 +238,9 @@ export default function Home() {
           </p>
 
 
-          {/* FOTO ANAK */}
+          {/* =====================================
+              FOTO ALANZA & ALANA
+          ====================================== */}
           <div className="mt-16 grid gap-14 md:grid-cols-2">
 
             {/* ALANZA */}
@@ -305,7 +311,9 @@ export default function Home() {
           </div>
 
 
-          {/* ORANG TUA */}
+          {/* =====================================
+              ORANG TUA
+          ====================================== */}
           <div className="mt-16">
 
             <p className="text-sm leading-8 text-gray-500 sm:text-base">
@@ -347,7 +355,6 @@ export default function Home() {
             Dua buah hati tercinta yang menjadi anugerah
             dan kebahagiaan terindah bagi keluarga kami.
           </p>
-
 
           <div className="relative mx-auto mt-12 max-w-lg">
 
@@ -432,22 +439,18 @@ export default function Home() {
           </p>
 
 
-          {/* =====================================
-              TOMBOL LIHAT REKENING
-          ====================================== */}
+          {/* TOMBOL */}
           {!showGift && (
             <button
               onClick={() => setShowGift(true)}
-              className="mt-10 rounded-full border border-[#c8a968] bg-[#c8a968] px-9 py-3.5 text-sm font-medium text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#b9985c]"
+              className="mt-10 rounded-full border border-[#b99a62] bg-[#b99a62] px-9 py-3.5 text-sm font-medium text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#a98a54]"
             >
               💌 Lihat Rekening
             </button>
           )}
 
 
-          {/* =====================================
-              DAFTAR REKENING
-          ====================================== */}
+          {/* REKENING */}
           {showGift && (
             <div className="mt-10 space-y-5 text-left">
 
@@ -561,7 +564,7 @@ export default function Home() {
       {/* =========================================
           FOOTER
       ========================================== */}
-      <footer className="bg-[#4b594d] px-6 py-16 text-center text-white">
+      <footer className="bg-[#435046] px-6 py-16 text-center text-white">
 
         <p className="text-xs uppercase tracking-[0.3em] text-[#e2cc98]">
           Tasyakuran Khitanan & Aqiqah
