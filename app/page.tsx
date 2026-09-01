@@ -87,7 +87,10 @@ export default function Home() {
       {!isOpened && (
         <div className="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-hidden bg-[#f5f1e8]">
 
-          {/* Background Foto */}
+          {/* =====================================
+              BACKGROUND FOTO
+              Foto menjadi elemen utama cover
+          ====================================== */}
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -95,66 +98,69 @@ export default function Home() {
             }}
           />
 
-          {/* Overlay ivory transparan */}
-          <div className="absolute inset-0 bg-[#f8f5ee]/45" />
+          {/* Overlay putih sangat tipis */}
+          <div className="absolute inset-0 bg-white/10" />
 
-          {/* Gradient lembut */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#fffdf8]/35 via-[#f7f2e8]/45 to-[#eee6d8]/65" />
-
-          {/* Soft vignette */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.12)_0%,rgba(238,230,216,0.28)_65%,rgba(70,62,48,0.18)_100%)]" />
+          {/* Gradient sangat lembut */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-[#3e463f]/20" />
 
 
           {/* =====================================
-              FRAME
+              FRAME LUAR
           ====================================== */}
-          <div className="absolute inset-5 rounded-[2rem] border border-white/60 sm:inset-8" />
+          <div className="absolute inset-4 rounded-[2rem] border border-white/70 shadow-[inset_0_0_70px_rgba(255,255,255,0.18)] sm:inset-7" />
 
-          <div className="absolute inset-8 rounded-[1.5rem] border border-[#b99a62]/35 sm:inset-12" />
+          <div className="absolute inset-7 rounded-[1.5rem] border border-[#b99a62]/55 sm:inset-10" />
 
 
           {/* =====================================
               ORNAMEN LINGKARAN
           ====================================== */}
-          <div className="absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/45" />
+          <div className="absolute left-1/2 top-1/2 h-[680px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/40" />
 
-          <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/25" />
+          <div className="absolute left-1/2 top-1/2 h-[560px] w-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/25" />
 
-          <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/15" />
+          <div className="absolute left-1/2 top-1/2 h-[440px] w-[440px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/35" />
 
 
           {/* =====================================
               ORNAMEN SUDUT
           ====================================== */}
-          <div className="absolute left-7 top-7 h-20 w-20 border-l border-t border-[#a88a56]/50" />
+          <div className="absolute left-7 top-7 h-20 w-20 border-l border-t border-[#b99a62]/75" />
 
-          <div className="absolute right-7 top-7 h-20 w-20 border-r border-t border-[#a88a56]/50" />
+          <div className="absolute right-7 top-7 h-20 w-20 border-r border-t border-[#b99a62]/75" />
 
-          <div className="absolute bottom-7 left-7 h-20 w-20 border-b border-l border-[#a88a56]/50" />
+          <div className="absolute bottom-7 left-7 h-20 w-20 border-b border-l border-[#b99a62]/75" />
 
-          <div className="absolute bottom-7 right-7 h-20 w-20 border-b border-r border-[#a88a56]/50" />
+          <div className="absolute bottom-7 right-7 h-20 w-20 border-b border-r border-[#b99a62]/75" />
 
 
           {/* =====================================
-              ISI COVER
+              PANEL TEKS
+              Transparan agar foto tetap terlihat
           ====================================== */}
-          <div className="relative z-10 mx-auto max-w-md px-8 text-center">
+          <div className="relative z-10 mx-6 max-w-md rounded-[2rem] border border-white/60 bg-[#fffdf8]/70 px-8 py-10 text-center shadow-[0_20px_70px_rgba(55,45,30,0.18)] backdrop-blur-[3px] sm:px-12 sm:py-12">
 
-            <p className="text-[10px] font-medium uppercase tracking-[0.5em] text-[#66583f] sm:text-[11px]">
+            {/* Bismillah */}
+            <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-[#57574f] sm:text-[11px]">
               Bismillahirrahmanirrahim
             </p>
 
-            <div className="mx-auto mt-7 h-px w-16 bg-[#b99a62]" />
+            <div className="mx-auto mt-6 h-px w-16 bg-[#b99a62]" />
 
-            <p className="mt-7 text-xs font-medium uppercase tracking-[0.2em] text-[#665f53] sm:text-sm">
+
+            {/* Jenis acara */}
+            <p className="mt-7 text-xs font-medium uppercase tracking-[0.18em] text-[#625f56] sm:text-sm">
               Tasyakuran Khitanan & Aqiqah
             </p>
 
-            <h1 className="font-display mt-6 text-5xl leading-[1.05] text-[#435046] drop-shadow-[0_2px_8px_rgba(255,255,255,0.65)] sm:text-6xl">
+
+            {/* Nama */}
+            <h1 className="font-display mt-6 text-5xl leading-[1.02] text-[#35443a] drop-shadow-sm sm:text-6xl">
               Alanza
               <br />
 
-              <span className="text-3xl font-light text-[#b08d4f]">
+              <span className="text-3xl font-light text-[#ad8848]">
                 &
               </span>
 
@@ -163,26 +169,36 @@ export default function Home() {
               Alana
             </h1>
 
+
             <div className="mx-auto mt-7 h-px w-12 bg-[#b99a62]" />
 
-            <p className="mt-7 text-sm leading-7 text-[#625e56] drop-shadow-[0_1px_4px_rgba(255,255,255,0.7)]">
+
+            {/* Tamu */}
+            <p className="mt-7 text-sm leading-7 text-[#595951]">
               Kepada Yth.
               <br />
-              Bapak/Ibu/Saudara/i
+
+              <span className="font-medium text-[#45483f]">
+                Bapak/Ibu/Saudara/i
+              </span>
             </p>
 
+
+            {/* Tombol buka */}
             <button
               onClick={openInvitation}
-              className="mt-9 rounded-full border border-[#b99a62] bg-[#b99a62]/95 px-10 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_10px_30px_rgba(100,80,45,0.22)] backdrop-blur-sm transition duration-300 hover:scale-105 hover:bg-[#a98a54]"
+              className="mt-9 rounded-full border border-[#b99a62] bg-[#b99a62] px-10 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_8px_25px_rgba(100,80,45,0.25)] transition duration-300 hover:scale-105 hover:bg-[#a9874b]"
             >
               ✉ Buka Undangan
             </button>
 
-            <p className="mt-5 text-[9px] uppercase tracking-[0.3em] text-[#756d60]">
+
+            <p className="mt-5 text-[9px] uppercase tracking-[0.28em] text-[#716c61]">
               Ketuk untuk membuka undangan
             </p>
 
           </div>
+
         </div>
       )}
 
@@ -193,7 +209,11 @@ export default function Home() {
       {isOpened && (
         <button
           onClick={toggleMusic}
-          aria-label={isPlaying ? "Matikan musik" : "Putar musik"}
+          aria-label={
+            isPlaying
+              ? "Matikan musik"
+              : "Putar musik"
+          }
           className={`fixed right-5 top-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-[#b99a62]/40 bg-white text-lg text-[#8b7042] shadow-lg transition ${
             isPlaying ? "animate-spin" : ""
           }`}
@@ -239,7 +259,7 @@ export default function Home() {
 
 
           {/* =====================================
-              FOTO ALANZA & ALANA
+              FOTO ANAK
           ====================================== */}
           <div className="mt-16 grid gap-14 md:grid-cols-2">
 
@@ -261,6 +281,7 @@ export default function Home() {
                   />
 
                 </div>
+
               </div>
 
               <p className="font-display mt-10 text-3xl font-semibold text-[#657567] sm:text-4xl">
@@ -294,6 +315,7 @@ export default function Home() {
                   />
 
                 </div>
+
               </div>
 
               <p className="font-display mt-10 text-3xl font-semibold text-[#657567] sm:text-4xl">
@@ -356,6 +378,7 @@ export default function Home() {
             dan kebahagiaan terindah bagi keluarga kami.
           </p>
 
+
           <div className="relative mx-auto mt-12 max-w-lg">
 
             <div className="absolute -inset-4 rounded-[2rem] border border-[#b99a62]/20" />
@@ -405,7 +428,7 @@ export default function Home() {
         className="relative overflow-hidden bg-[#f7f3ea] px-6 py-24 sm:py-32"
       >
 
-        {/* Ornamen */}
+        {/* Ornamen lingkaran */}
         <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/10" />
 
         <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b99a62]/5" />
@@ -418,15 +441,19 @@ export default function Home() {
             ♡
           </div>
 
+
           <p className="text-xs uppercase tracking-[0.35em] text-[#8b7042]">
             Titip Hadiah
           </p>
+
 
           <h2 className="font-display mt-5 text-4xl text-[#4b594d] sm:text-5xl">
             Tanda Kasih
           </h2>
 
+
           <div className="mx-auto mt-6 h-px w-14 bg-[#b99a62]" />
+
 
           <p className="mx-auto mt-8 max-w-xl text-sm leading-8 text-gray-500 sm:text-base">
             Doa dan kehadiran Bapak/Ibu/Saudara/i merupakan
@@ -439,18 +466,22 @@ export default function Home() {
           </p>
 
 
-          {/* TOMBOL */}
+          {/* =====================================
+              TOMBOL LIHAT REKENING
+          ====================================== */}
           {!showGift && (
             <button
               onClick={() => setShowGift(true)}
-              className="mt-10 rounded-full border border-[#b99a62] bg-[#b99a62] px-9 py-3.5 text-sm font-medium text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#a98a54]"
+              className="mt-10 rounded-full border border-[#b99a62] bg-[#b99a62] px-9 py-3.5 text-sm font-medium text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#a9874b]"
             >
               💌 Lihat Rekening
             </button>
           )}
 
 
-          {/* REKENING */}
+          {/* =====================================
+              DAFTAR REKENING
+          ====================================== */}
           {showGift && (
             <div className="mt-10 space-y-5 text-left">
 
@@ -472,6 +503,7 @@ export default function Home() {
                 <p className="mt-2 text-sm text-gray-500">
                   a.n. Bika Rajulan
                 </p>
+
 
                 <button
                   onClick={() => copyAccountNumber("8190433472")}
@@ -504,6 +536,7 @@ export default function Home() {
                   a.n. Bika Rajulan
                 </p>
 
+
                 <button
                   onClick={() => copyAccountNumber("1100020863095")}
                   className="mt-5 inline-flex items-center gap-2 rounded-full border border-[#c8a968] bg-[#faf6ec] px-5 py-2.5 text-xs font-medium text-[#8b7042] transition hover:bg-[#c8a968] hover:text-white"
@@ -516,7 +549,7 @@ export default function Home() {
               </div>
 
 
-              {/* PESAN */}
+              {/* Pesan */}
               <p className="pt-4 text-center text-xs leading-7 text-gray-500">
                 Terima kasih atas perhatian, doa, dan
                 tanda kasih yang diberikan untuk
@@ -540,17 +573,20 @@ export default function Home() {
 
           <div className="mx-auto mb-8 h-px w-16 bg-[#b99a62]" />
 
+
           <p className="font-display text-3xl leading-relaxed text-[#4b594d] sm:text-4xl">
             “Semoga menjadi anak yang sholeh dan sholehah,
             berbakti kepada orang tua, serta menjadi
             kebanggaan keluarga.”
           </p>
 
+
           <p className="mt-8 text-sm leading-8 text-gray-500">
             Merupakan suatu kebahagiaan bagi kami apabila
             Bapak/Ibu/Saudara/i berkenan hadir dan memberikan
             doa terbaik untuk Alanza dan Alana.
           </p>
+
 
           <p className="mt-8 text-sm text-gray-400">
             Wassalamu’alaikum Warahmatullahi Wabarakatuh
@@ -570,16 +606,20 @@ export default function Home() {
           Tasyakuran Khitanan & Aqiqah
         </p>
 
+
         <h2 className="font-display mt-4 text-4xl text-[#f4dfb2]">
           Alanza & Alana
         </h2>
+
 
         <p className="mx-auto mt-5 max-w-md text-xs leading-7 text-white/60">
           Terima kasih atas doa, perhatian, dan kehadiran
           Bapak/Ibu/Saudara/i.
         </p>
 
+
         <div className="mx-auto mt-8 h-px w-10 bg-[#d4bc8b]/70" />
+
 
         <p className="mt-6 text-[10px] tracking-[0.25em] text-white/40">
           WITH LOVE FROM OUR FAMILY
