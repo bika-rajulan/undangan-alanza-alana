@@ -106,110 +106,123 @@ export default function EventDetail() {
         </div>
 
         {/* =========================================
-            LOKASI ACARA
-        ========================================== */}
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 25,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          transition={{
-            duration: 0.7,
-            delay: 0.2,
-          }}
-          className="relative mt-8 overflow-hidden rounded-[2rem] border border-[#d4bc8b]/35 bg-[#435046] p-8 text-center text-white shadow-[0_18px_55px_rgba(67,80,70,0.16)] sm:p-10"
-        >
+    LOKASI ACARA
+========================================== */}
+<motion.div
+  initial={{
+    opacity: 0,
+    y: 25,
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: true,
+  }}
+  transition={{
+    duration: 0.7,
+    delay: 0.2,
+  }}
+  className="relative mt-8 overflow-hidden rounded-[2rem] border border-[#d4bc8b]/40 bg-[#5a5145] p-8 text-center text-white shadow-[0_18px_55px_rgba(80,65,40,0.18)] sm:p-10"
+>
 
-          {/* =====================================
-              ORNAMEN LINGKARAN
-          ====================================== */}
-          <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full border border-[#d4bc8b]/10" />
+  {/* =====================================
+      ORNAMEN LINGKARAN
+  ====================================== */}
 
-          <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full border border-[#d4bc8b]/10" />
+  <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full border border-[#f4dfb2]/15" />
 
-          <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full border border-[#d4bc8b]/10" />
+  <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full border border-[#d4bc8b]/15" />
 
-          <div className="absolute -bottom-12 -left-8 h-40 w-40 rounded-full border border-[#d4bc8b]/10" />
+  <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full border border-[#f4dfb2]/10" />
 
-          <div className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
+  <div className="absolute -bottom-12 -left-8 h-40 w-40 rounded-full border border-[#d4bc8b]/10" />
 
-          {/* =====================================
-              GARIS DEKORASI
-          ====================================== */}
-          <div className="absolute left-1/2 top-0 h-1 w-20 -translate-x-1/2 rounded-b-full bg-[#d4bc8b]" />
+  <div className="absolute left-1/2 top-1/2 h-[360px] w-[360px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5" />
 
-          {/* =====================================
-              CONTENT
-          ====================================== */}
-          <div className="relative z-10">
 
-            {/* Icon */}
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#d4bc8b]/45 bg-[#d4bc8b]/10 shadow-[0_5px_25px_rgba(0,0,0,0.08)]">
-              <MapPin
-                className="text-[#e5ce99]"
-                size={27}
-                strokeWidth={1.5}
-              />
-            </div>
+  {/* =====================================
+      GARIS DEKORASI
+  ====================================== */}
 
-            {/* Label */}
-            <p className="mt-6 text-[10px] font-medium uppercase tracking-[0.4em] text-[#d8bd82]">
-              Tempat Acara
-            </p>
+  <div className="absolute left-1/2 top-0 h-1 w-20 -translate-x-1/2 rounded-b-full bg-[#d4bc8b]" />
 
-            {/* Judul */}
-            <h3 className="font-display mt-3 text-3xl text-[#f4dfb2] sm:text-4xl">
-              Kediaman Keluarga
-            </h3>
 
-            {/* Divider */}
-            <div className="mx-auto mt-5 flex items-center justify-center gap-3">
-              <div className="h-px w-8 bg-[#d4bc8b]/50" />
+  {/* =====================================
+      CONTENT
+  ====================================== */}
 
-              <div className="h-1 w-1 rotate-45 bg-[#d4bc8b]" />
+  <div className="relative z-10">
 
-              <div className="h-px w-8 bg-[#d4bc8b]/50" />
-            </div>
+    {/* Icon */}
+    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#f4dfb2]/45 bg-[#f4dfb2]/10 shadow-[0_5px_25px_rgba(0,0,0,0.12)]">
+      <MapPin
+        className="text-[#f4dfb2]"
+        size={27}
+        strokeWidth={1.5}
+      />
+    </div>
 
-            {/* Alamat */}
-            <p className="mx-auto mt-6 max-w-lg text-sm leading-7 text-white/75 sm:text-base">
-              Lrg. Kamboja RT.07/01,
-              <br />
-              Desa Mendalo Darat,
-              <br />
-              Jambi Luar Kota, Jambi 36361
-            </p>
 
-            {/* Google Maps */}
-            <a
-              href="https://maps.app.goo.gl/nNGJCvWSxJ53KPPj8"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#d4bc8b] bg-[#d4bc8b] px-8 py-3.5 text-sm font-medium text-[#435046] shadow-[0_8px_25px_rgba(0,0,0,0.12)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] hover:shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
-            >
-              <MapPin
-                size={16}
-                strokeWidth={1.8}
-              />
+    {/* Label */}
+    <p className="mt-6 text-[10px] font-medium uppercase tracking-[0.4em] text-[#f4dfb2]">
+      Tempat Acara
+    </p>
 
-              Buka Google Maps
-            </a>
 
-            {/* Keterangan */}
-            <p className="mx-auto mt-6 max-w-md text-[11px] leading-6 text-white/40">
-              Kami menantikan kehadiran dan doa terbaik
-              Bapak/Ibu/Saudara/i untuk Alanza & Alana.
-            </p>
+    {/* Judul */}
+    <h3 className="font-display mt-3 text-3xl text-[#fff4d6] sm:text-4xl">
+      Kediaman Keluarga
+    </h3>
 
-          </div>
-        </motion.div>
+
+    {/* Divider */}
+    <div className="mx-auto mt-5 flex items-center justify-center gap-3">
+      <div className="h-px w-8 bg-[#d4bc8b]/60" />
+
+      <div className="h-1 w-1 rotate-45 bg-[#f4dfb2]" />
+
+      <div className="h-px w-8 bg-[#d4bc8b]/60" />
+    </div>
+
+
+    {/* Alamat */}
+    <p className="mx-auto mt-6 max-w-lg text-sm leading-7 text-[#f8f1e4]/85 sm:text-base">
+      Lrg. Kamboja RT.07/01,
+      <br />
+      Desa Mendalo Darat,
+      <br />
+      Jambi Luar Kota, Jambi 36361
+    </p>
+
+
+    {/* Google Maps */}
+    <a
+      href="https://maps.app.goo.gl/nNGJCvWSxJ53KPPj8"
+      target="_blank"
+      rel="noreferrer"
+      className="mt-8 inline-flex items-center gap-2 rounded-full border border-[#d4bc8b] bg-[#d4bc8b] px-8 py-3.5 text-sm font-semibold text-[#4b4032] shadow-[0_8px_25px_rgba(40,30,20,0.2)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] hover:shadow-[0_10px_30px_rgba(40,30,20,0.28)]"
+    >
+      <MapPin
+        size={16}
+        strokeWidth={1.8}
+      />
+
+      Buka Google Maps
+    </a>
+
+
+    {/* Keterangan */}
+    <p className="mx-auto mt-6 max-w-md text-[11px] leading-6 text-[#f4ead8]/55">
+      Kami menantikan kehadiran dan doa terbaik
+      Bapak/Ibu/Saudara/i untuk Alanza & Alana.
+    </p>
+
+  </div>
+
+</motion.div>
+
 
         {/* =========================================
             CATATAN

@@ -226,7 +226,7 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh
   whileTap={{
     scale: 0.98,
   }}
-  className="mt-7 flex w-full items-center justify-center gap-2 rounded-full border border-[#c8a968]/60 bg-[#36443b] px-6 py-4 text-sm font-medium text-[#f4dfb2] shadow-[0_10px_30px_rgba(54,68,59,0.16)] transition duration-300 hover:border-[#d4bc8b] hover:bg-[#d4bc8b] hover:text-[#36443b] hover:shadow-[0_12px_35px_rgba(200,169,104,0.18)]"
+  className="mt-7 flex w-full items-center justify-center gap-2 rounded-full border border-[#d4bc8b]/70 bg-[#5a5145] px-6 py-4 text-sm font-medium text-[#f4dfb2] shadow-[0_10px_30px_rgba(80,65,40,0.18)] transition duration-300 hover:border-[#f4dfb2] hover:bg-[#d4bc8b] hover:text-[#4b4032] hover:shadow-[0_12px_35px_rgba(200,169,104,0.22)]"
 >
   <MessageCircle
     size={18}
@@ -235,6 +235,7 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh
 
   Kirim Konfirmasi via WhatsApp
 </motion.button>
+
 
 
           {/* =====================================
