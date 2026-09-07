@@ -330,8 +330,9 @@ Terima kasih.`;
           aria-label={
             isPlaying ? "Matikan musik" : "Putar musik"
           }
-          className={`fixed right-5 top-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-[#d4bc8b]/60 bg-[#5a5145]/95 text-lg text-[#f4dfb2] shadow-[0_8px_25px_rgba(80,65,40,0.25)] backdrop-blur-sm transition duration-300 hover:border-[#f4dfb2] hover:bg-[#d4bc8b] hover:text-[#4b4032] ${isPlaying ? "animate-spin" : ""
+          className={`fixed left-5 top-5 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-[#d4bc8b]/60 bg-[#5a5145]/95 text-lg text-[#f4dfb2] shadow-[0_8px_25px_rgba(80,65,40,0.25)] backdrop-blur-sm transition duration-300 hover:border-[#f4dfb2] hover:bg-[#d4bc8b] hover:text-[#4b4032] ${isPlaying ? "animate-spin" : ""
             }`}
+
         >
           {isPlaying ? "♫" : "🔇"}
         </button>
