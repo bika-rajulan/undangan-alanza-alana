@@ -759,14 +759,6 @@ Terima kasih.`;
 
               <div className="relative w-full max-w-md rounded-3xl bg-[#fffdf8] p-7 text-left shadow-2xl">
 
-                <button
-                  onClick={() => setShowWishForm(false)}
-                  className="absolute right-5 top-4 text-2xl text-gray-400 transition hover:text-[#8b7042]"
-                  aria-label="Tutup"
-                >
-                  ×
-                </button>
-
 
                 {!wishDraft ? (
                   <>
@@ -953,6 +945,14 @@ Terima kasih.`;
                       ← Ubah Data
                     </button>
 
+                    <button
+                      onClick={() => setShowGiftForm(false)}
+                      className="mt-3 w-full rounded-full border border-gray-200 bg-white px-6 py-3 text-xs font-medium text-gray-500 transition hover:bg-gray-50 hover:text-[#8b7042] active:scale-95"
+                    >
+                      ✕ Tutup
+                    </button>
+
+
                   </>
                 )}
 
@@ -970,14 +970,6 @@ Terima kasih.`;
             <div className="fixed inset-0 z-[90] flex items-center justify-center overflow-y-auto bg-black/50 px-5 py-8 backdrop-blur-sm">
 
               <div className="relative w-full max-w-md rounded-3xl bg-[#fffdf8] p-7 text-left shadow-2xl">
-
-                <button
-                  onClick={() => setShowGiftForm(false)}
-                  className="absolute right-5 top-4 text-2xl text-gray-400 transition hover:text-[#8b7042]"
-                  aria-label="Tutup"
-                >
-                  ×
-                </button>
 
 
                 {!giftDraft ? (
@@ -1135,6 +1127,14 @@ Terima kasih.`;
                     >
                       ← Ubah Data
                     </button>
+
+                    <button
+                      onClick={() => setShowWishForm(false)}
+                      className="mt-3 w-full rounded-full border border-gray-200 bg-white px-6 py-3 text-xs font-medium text-gray-500 transition hover:bg-gray-50 hover:text-[#8b7042] active:scale-95"
+                    >
+                      ✕ Tutup
+                    </button>
+
 
                   </>
                 )}
