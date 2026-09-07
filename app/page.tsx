@@ -893,7 +893,19 @@ Terima kasih.`;
                       >
                         📝 Buat Draf Pesanan
                       </button>
-
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setShowWishForm(false);
+                          setWishDraft("");
+                          setWishName("");
+                          setWishMessage("");
+                          setSelectedWish("");
+                        }}
+                        className="mt-3 w-full rounded-full border border-gray-200 bg-white px-6 py-3 text-xs font-medium text-gray-500 transition hover:bg-gray-50 hover:text-[#8b7042] active:scale-95"
+                      >
+                        ✕ Tutup
+                      </button>
                     </div>
                   </>
                 ) : (
@@ -946,7 +958,14 @@ Terima kasih.`;
                     </button>
 
                     <button
-                      onClick={() => setShowGiftForm(false)}
+                      type="button"
+                      onClick={() => {
+                        setShowWishForm(false);
+                        setWishDraft("");
+                        setWishName("");
+                        setWishMessage("");
+                        setSelectedWish("");
+                      }}
                       className="mt-3 w-full rounded-full border border-gray-200 bg-white px-6 py-3 text-xs font-medium text-gray-500 transition hover:bg-gray-50 hover:text-[#8b7042] active:scale-95"
                     >
                       ✕ Tutup
@@ -1076,7 +1095,19 @@ Terima kasih.`;
                       >
                         📝 Buat Draf Alamat
                       </button>
-
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setShowWishForm(false);
+                          setWishDraft("");
+                          setWishName("");
+                          setWishMessage("");
+                          setSelectedWish("");
+                        }}
+                        className="mt-3 w-full rounded-full border border-gray-200 bg-white px-6 py-3 text-xs font-medium text-gray-500 transition hover:bg-gray-50 hover:text-[#8b7042] active:scale-95"
+                      >
+                        ✕ Tutup
+                      </button>
                     </div>
                   </>
                 ) : (
@@ -1129,7 +1160,14 @@ Terima kasih.`;
                     </button>
 
                     <button
-                      onClick={() => setShowWishForm(false)}
+                      type="button"
+                      onClick={() => {
+                        setShowWishForm(false);
+                        setWishDraft("");
+                        setWishName("");
+                        setWishMessage("");
+                        setSelectedWish("");
+                      }}
                       className="mt-3 w-full rounded-full border border-gray-200 bg-white px-6 py-3 text-xs font-medium text-gray-500 transition hover:bg-gray-50 hover:text-[#8b7042] active:scale-95"
                     >
                       ✕ Tutup
