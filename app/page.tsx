@@ -291,11 +291,11 @@ Terima kasih.`;
                 Bismillahirrahmanirrahim
               </p>
 
-              <p className="mt-2 text-[9px] font-medium uppercase tracking-[0.14em] text-white/90 drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)] sm:text-xs">
+              <p className="mt-1 text-[16px] font-medium uppercase tracking-[0.14em] text-white/90 drop-shadow-[0_3px_8px_rgba(0,0,0,0.9)] sm:text-xs">
                 Tasyakuran Khitanan & Aqiqah
               </p>
 
-              <h1 className="font-display mt-3 whitespace-nowrap text-[2.4rem] leading-none text-[#fff8e9] drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)] sm:mt-2 sm:text-6xl">
+              <h1 className="font-display mt-1 whitespace-nowrap text-[2.4rem] leading-none text-[#fff8e9] drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] sm:mt-1 sm:text-6xl">
                 Alanza
                 <span className="mx-2 font-light text-[#f4dfb2]">
                   &
@@ -303,13 +303,13 @@ Terima kasih.`;
                 Alana
               </h1>
 
-              <p className="mt-2 text-[9px] font-medium tracking-[0.15em] text-[#f4dfb2] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:mt-2 sm:text-xs">
+              <p className="mt-1 text-[9px] font-medium tracking-[0.15em] text-[#f4dfb2] drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:mt-1 sm:text-xs">
                 11 OKTOBER 2026
               </p>
 
               <button
                 onClick={openInvitation}
-                className="mt-4 rounded-full border border-[#f4dfb2] bg-[#d4bc8b]/95 px-8 py-2.5 text-[10px] font-semibold tracking-wide text-[#26332b] shadow-[0_8px_25px_rgba(0,0,0,0.4)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] active:scale-95 sm:mt-4 sm:px-10 sm:py-3 sm:text-sm"
+                className="mt-2 rounded-full border border-[#f4dfb2] bg-[#d4bc8b]/95 px-8 py-2.5 text-[10px] font-semibold tracking-wide text-[#26332b] shadow-[0_8px_25px_rgba(0,0,0,0.4)] transition duration-300 hover:scale-105 hover:bg-[#f4dfb2] active:scale-95 sm:mt-2 sm:px-10 sm:py-3 sm:text-sm"
               >
                 Buka Undangan
               </button>
